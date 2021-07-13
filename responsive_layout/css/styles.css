@@ -1,0 +1,168 @@
+/* ELEMENT STYLES */
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 320px;
+}
+
+body {
+    background-color: black;
+    color: rgb(236, 236, 236);
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: cyan;
+    border: 1px solid cyan;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(236, 236, 236);
+    border: none;
+}
+
+/* LAYOUT STYLES */
+.name, .main-footer1 {
+    margin: 0;
+    color: cyan;
+}
+
+.nav {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.profile-img {
+    display: none;
+    border-radius: 50%;
+}
+
+.small-profile-img {
+    border-radius: 50%;
+}
+
+.main-nav, .name, main, body, .intro, h2, #Contact{
+    text-align: center;
+}
+
+.skills-list {
+    list-style: upper-roman;
+}
+
+.main-footer1 {
+    float: left;
+}
+
+.main-footer2 {
+    float: right;
+}
+
+.main-footer3 {
+    display: none;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+.intro {
+    text-align: left;
+}
+.main-header, .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav {
+    margin-top: 15px;
+}
+
+.nav {
+    display: inline;
+    padding: 0px;
+    float: right;
+}
+
+.intro, .profile-img, .text {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.profile-img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.small-profile-img {
+    display: none;
+}
+
+.flexbox-item {
+    flex: 1 50%;
+}
+
+.main-footer2 {
+    display: none;
+}
+
+.main-footer3 {
+    display: inline;
+    float: right;
+}
+}
+
+@media (min-width: 1024px) {
+.main-header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexbox-item {
+    flex: 0 30%;
+}
+
+.intro, .profile-img, .text {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.small-profile-img {
+    display: none;
+}
+
+.text {
+    margin-top: 70px;
+}
+
+.main-footer2 {
+    display: none;
+}
+
+.wrapper {
+    width: 75%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
